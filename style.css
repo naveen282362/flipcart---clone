@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: lightgrey;
+}
+.navbar {
+    background-color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo {
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+}
+.search {
+    width: 35%;
+    background-color: skyblue;
+    align-items: center;
+    border-radius: 6px;
+    height: 40px;
+    display: flex;
+}
+.searchicon {
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background-color: skyblue;
+    border-radius: 6px;
+}
+.input-box {
+    height: 40px;
+    width: 300px;
+    font: 20px bold;
+    outline: 0;
+    border: 0;
+    background-color: skyblue;
+}
+.login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all o.3s ease;
+}
+.login:hover {
+    background-color: #2874f0;
+    color: white;
+    border-radius: 8px;
+    height: 40px;
+    padding: 0 8px 0 8px;
+}
+.logicon {
+    margin-right: 6px;
+}
+.logarrow {
+    transition: transform 0.3s ease-in-out;
+}
+.logarrow:hover {
+    transform: rotate(180deg);
+}
+.cart-box,.seller {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    cursor: pointer;
+}
+.container {
+    margin: 80px 15px 0 15px;
+    background-color: white;
+}
+.subcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    height: 135px;
+}
+.object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.text {
+    margin-top: 20px;
+}
+.object img {
+    width: 70px;
+    margin-bottom: 7px;
+}
+.slidebar {
+    background-color: white;
+    margin: 15px 15px 0 15px;
+}
+.slide {
+    height: 240px; 
+    width: 98%;
+    display: flex;
+}
+.slideimage {
+    width: 102%;
+    height: 220px;
+    cursor: pointer;
+}
+.arrow-left {
+   position: absolute;
+   top: 50%;
+   background-color: white;
+   padding: 30px 15px 30px 15px;
+   border: none;
+   border-radius: 2px;
+}
+.arrow-right {
+   position: absolute;
+   top: 50%;
+   left: 96%;
+   background-color: white;
+   border: none;
+   border-radius: 2px;
+   padding: 30px 15px 30px 15px;
+}
+.main-area {
+    margin: 15px 015px 0 15px;
+    background-color: white;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.contents-text {
+    padding-left: 20px;
+    cursor: default;
+}
+.content1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.text-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.photo {
+    height: 60%;
+}
+.mid-area {
+    background-color: white;
+    height: auto;
+    margin: 15px 15px 0 15px;
+}
+.mid-box {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.banner1 {
+    width: 33%;
+    padding-right: 6px;
+}
+.down-area {
+    background-color: white;
+    margin: 15px 015px 0 15px;
+}
+.sources {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+.source-text {
+    padding-left: 20px;
+    padding-top: 20px;
+    cursor: default;
+}
+.image {
+    height: 50%;
+    width: 80%;
+}
+.source1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.image-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.bottom {
+    padding: 50px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
