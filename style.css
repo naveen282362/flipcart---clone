@@ -7,50 +7,62 @@ body {
 .navbar {
     background-color: white;
     display: flex;
-    height: 70px;
+    /* height: 70px; */
+    padding: 12px 20px;
     align-items: center;
     justify-content: space-evenly;
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
+    flex-wrap: nowrap;
 }
 .logo {
     height: 40px;
     width: 160px;
     cursor: pointer;
+    margin-left: 10px;
 }
 .search {
-    width: 35%;
     background-color: skyblue;
     align-items: center;
     border-radius: 6px;
-    height: 40px;
+    margin: 0 20px;
+    padding: 5px 20px;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .searchicon {
-    width: 45px;
+    width: 40px;
     height: 40px;
     cursor: pointer;
     align-items: center;
-    border: 0;
+    border: none;
     background-color: skyblue;
     border-radius: 6px;
 }
 .input-box {
-    height: 40px;
-    width: 300px;
+    width: 90%;
     font: 20px bold;
-    outline: 0;
-    border: 0;
+    outline: none;
+    border: none;
     background-color: skyblue;
+    padding: 8px;
+}
+.menu-links{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 36px;
 }
 .login {
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: all o.3s ease;
-}
+} 
 .login:hover {
     background-color: #2874f0;
     color: white;
@@ -70,12 +82,13 @@ body {
 .cart-box,.seller {
     display: flex;
     align-items: center;
-    gap: 8px;
+    /* gap: 8px; */
     cursor: pointer;
 }
 .menu{
-    display: flex;
+    display: flex; 
     cursor: pointer;
+    margin-right: 10px;
 }
 .container {
     margin: 80px 15px 0 15px;
@@ -107,30 +120,36 @@ body {
 }
 .slide {
     height: 240px; 
-    width: 98%;
+    width: 100%;
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 .slideimage {
-    width: 102%;
+    width: 100%;
     height: 220px;
     cursor: pointer;
+    display: block;
 }
 .arrow-left {
    position: absolute;
+   left: 0;
    top: 50%;
+   transform: translateY(-50%);
    background-color: white;
-   padding: 30px 15px 30px 15px;
+   padding: 30px 15px;
    border: none;
    border-radius: 2px;
 }
 .arrow-right {
    position: absolute;
+   right: 0;
    top: 50%;
-   left: 96%;
+   transform: translateY(-50%);
    background-color: white;
    border: none;
    border-radius: 2px;
-   padding: 30px 15px 30px 15px;
+   padding: 30px 15px;
 }
 .main-area {
     margin: 15px 015px 0 15px;
@@ -141,24 +160,30 @@ body {
     flex-direction: column;
     height: 300px;
 }
-.contents-text {
+.contents {
     padding-left: 20px;
     cursor: default;
+    margin-bottom: 20px;
 }
 .content1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     cursor: pointer;
+
 }
-.text-1 {
-    text-align: center;
+.photo-text{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
 }
 .photo {
-    height: 60%;
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
 }
 .mid-area {
     background-color: white;
